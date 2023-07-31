@@ -1,0 +1,24 @@
+button{
+    border: transparent;
+    border-radius: 10px;
+}
+button:active{
+    transform: scale(.9);
+}
+button:hover{
+    color: green;
+}
+
+
+#contado{
+    background-color: rgb(142, 103, 103);
+}
+#cuentaCorriente{
+background-color: rgb(243, 243, 124);
+}
+#Trasferencia{
+background-color: rgb(127, 127, 246);
+}
+#pieTabla{
+    background-color: rgb(133, 237, 64);
+}

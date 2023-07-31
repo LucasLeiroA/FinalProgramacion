@@ -1,0 +1,85 @@
+body{
+    background: url(../imagenes/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h3{
+    color: white;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+}
+.contenedor{
+    width: 30%;
+    background-color: #3b4652;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 20px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.formulario h2{
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    color: white;
+}
+input{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 12px;
+    width: 70%;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.btn-acp{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.btn-acp button{
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+}
+.login{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
