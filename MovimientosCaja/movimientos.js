@@ -5,6 +5,9 @@ var fecha = date.getDate();
 var hora = date.getHours()
 var id_user = localStorage.getItem('id');
 import { IngresarDatos , getItems , modificarItem} from "../firebase.js";
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 function principal(){
 
     document.getElementById("aceptar").addEventListener("click", aceptarTipo)

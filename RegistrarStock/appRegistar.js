@@ -1,6 +1,8 @@
 window.onload=principal;
-
 import { getItems , deleteSingleItem , IngresarDatos ,modificarItem } from "../firebase.js";
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 //obteniendo la url desde el localstorage
 
 var id_user = localStorage.getItem('id');
@@ -69,7 +71,7 @@ function ingresoDb() {
      
                      document.getElementById("CuerpoTabla").innerHTML+= 
                  `<tr>
-                     <th scope="row">${item.id}</th>
+                     <th id="colid"scope="row">${item.id}</th>
                      <td>${item.nombre}</td>
                      <td>${item.cantidad}</td>
                      <td>${cat}</td>

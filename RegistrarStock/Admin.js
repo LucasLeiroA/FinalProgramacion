@@ -1,7 +1,9 @@
  window.onload=principal;
 
 import { getItems } from "../firebase.js";
-
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 function principal(){
     document.getElementById("btn_admin").addEventListener("click",ingresoAdmin)
 }

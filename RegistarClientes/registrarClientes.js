@@ -1,6 +1,9 @@
 window.onload=principal;
  
 import {getItems , IngresarDatos ,  deleteSingleItem , modificarItem } from "../firebase.js"
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 var id_user = localStorage.getItem('id');
 function principal(){
   document.getElementById("btnAceptar").addEventListener("click",btnAceptar)
@@ -28,7 +31,7 @@ document.getElementById("CuerpoTabla").innerHTML="";
             
             document.getElementById("CuerpoTabla").innerHTML+=
             `<tr>
-                            <th scope="row">${item.id}</th>
+                            <th id="colid" scope="row">${item.id}</th>
                             <td>${item.nomYape}</td>
                             <td>${item.dni}</td>
                             <td>${item.direccion}</td>

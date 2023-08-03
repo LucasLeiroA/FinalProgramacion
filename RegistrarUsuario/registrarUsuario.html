@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="./registrarUsuario.js"></script>
     <link rel="stylesheet" href="./registrarUsuario.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <title>Registrar Usuario</title>
 </head>
 <body>
     <div class="box">
         <div class="contenedor">
             <h3>Registrarte</h3>
-                <form action="submit" class="formulario">
+                <form class="formulario">
+
                     <h2>Ingrese datos del usuario de inicio de sesion</h2>
-                    <input id="correo_user1" type="text" placeholder="Ingrese su Correo Electronico" required>
-                    <input id="correo_user2" type="text" placeholder="Confirme su Correo Electronico" required>
+                    <input id="correo_user1" type="email" placeholder="Ingrese su Correo Electronico" required>
+                    <input id="correo_user2" type="email" placeholder="Confirme su Correo Electronico" required>
                     <input id="password_user1" type="password" placeholder="Ingrese una Contraseña" required>
                     <input id="password_user2" type="password" placeholder="Confirme su Contraseña" required>
                     <input id="username1" type="text" placeholder="Ingrese un nombre de usuario" required>
 
                     <h2>Ingrese Datos de de administrador</h2>
 
-                    <input id="correo_admin1" type="text"  placeholder="Ingrese su Correo Electronico" required>
-                    <input id="correo_admin2" type="text" placeholder="Confirme su Correo Electronico" required>
+                    <input id="correo_admin1" type="email"  placeholder="Ingrese su Correo Electronico" required>
+                    <input id="correo_admin2" type="email" placeholder="Confirme su Correo Electronico" required>
                     <input id="password_admin1" type="password" placeholder="Ingrese una Contraseña" required>
                     <input id="password_admin2" type="password"  placeholder="Confirme su Contraseña" required>
                     <input id="admin_name" type="text" placeholder="Ingrese un nombre de usuario" required>
-                </form>
-
-                <div class="botones">
-                    <div class="btn-acp">
-                        <button id="btn_aceptar">Registrarte</button>     
+                   </form>
+                    <div class="botones">
+                        <div class="btn-acp">
+                            <button id="btn_aceptar">Registrarte</button>     
+                            
+                        </div>
+                        <a class="login" href="../index.html">Ya tengo una cuenta</a>
                     </div>
-                    <a class="login" href="../index.html">Ya tengo una cuenta</a>
-                </div>
+                 
             </div>
         
     </div>

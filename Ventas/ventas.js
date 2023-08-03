@@ -1,5 +1,7 @@
 import { getItems, IngresarDatos, modificarItem } from "../firebase.js";
-
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 window.onload = principal;
 var id_user = localStorage.getItem('id');
 function principal() {

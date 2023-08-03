@@ -15,13 +15,46 @@ nav{
     overflow: auto;
     height: 550px;
 }
-button{
+
+#btn12345 button{
     border: transparent;
     border-radius: 10px;
 }
-button:active{
+#btn12345 button:active{
     transform: scale(.9);
 }
-button:hover{
+#btn12345 button:hover{
     color: green;
+}
+@media (max-width:1028px){
+
+    #colid{
+        display: none;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+    }
+    #form input{
+        width: 100%;
+        margin-top: 3%;
+    }
+    #form select{
+        width: 100%;
+        margin-top: 3%;
+    }
+    #butons{
+        margin-top: 2%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    #butons button{
+        background-color: rgb(121, 121, 80);
+        padding: 2%;
+    }
+
 }

@@ -1,6 +1,9 @@
 window.onload=principal;
 
 import { getItems, IngresarDatos, modificarItem } from "../firebase.js";
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 var id_user = localStorage.getItem('id');
 function principal(){
     document.getElementById("btnpagar").addEventListener("click", pagaoDeuda)

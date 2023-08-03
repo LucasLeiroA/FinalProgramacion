@@ -1,6 +1,9 @@
 window.onload=principal;
 
 import { getItems , modificarItem } from "../firebase.js";
+import {barra,pasa} from "../navega.js"
+barra();
+pasa();
 var id_user = localStorage.getItem('id');
 
 function principal(){
@@ -55,7 +58,7 @@ async function mostrarTabla(){
                     document.getElementById("cabezaTabla2").innerHTML+=
                     `
                     <tr>
-                            <th scope="col">#ID</th>
+                            <th id="colid" scope="col">#ID</th>
                             <th scope="col">Articulo</th>
                             <th scope="col">Dia</th>
                             <th scope="col">Cantidad</th>
@@ -87,7 +90,7 @@ async function mostrarTabla(){
                             }
                             document.getElementById("tablaMuestra2").innerHTML+=
                             `<tr>
-                            <th scope="row">${item.id}</th>
+                            <th  id="colid" scope="row">${item.id}</th>
                             <td>${nombre}</td>
                             <td>${item.dia}/${item.mes}/${item.ano}</td>
                             <td>${item.cantidad}</td>
@@ -264,7 +267,7 @@ async function mostrarTabla(){
                 document.getElementById("cabezaTabla2").innerHTML+=
                 `
                 <tr>
-                        <th scope="col">#ID</th>
+                        <th id="colid" scope="col">#ID</th>
                         <th scope="col">Cliente</th>
                         <th scope="col">Fecha</th>
                         <th scope="col">Articulo</th>
@@ -303,7 +306,7 @@ async function mostrarTabla(){
 
                         document.getElementById("tablaMuestra").innerHTML+=
                         `<tr>
-                        <th scope="row">${item.id}</th>
+                        <th id="colid" scope="row">${item.id}</th>
                         <td>${Cliente}</td>
                         <td>${item.dia}/${item.mes}/${item.ano}</td>
                         <td>${articulo}</td>
@@ -515,7 +518,7 @@ async function mostrarTabla(){
                 document.getElementById("cabezaTabla2").innerHTML+=
                 `
                 <tr>
-                        <th scope="col">#ID</th>
+                        <th  id="colid" scope="col">#ID</th>
                         <th scope="col">Articulo</th>
                         <th scope="col">Fecha</th>
                         <th scope="col">Cantidad</th>
@@ -552,7 +555,7 @@ async function mostrarTabla(){
 
                         document.getElementById("tablaMuestra").innerHTML+=
                         `<tr>
-                        <th scope="row">${item.id}</th>
+                        <th id="colid" scope="row">${item.id}</th>
                         <td>${articulo}</td>
                         <td>${item.dia}/${item.mes}/${item.ano}</td>
                         <td>${item.cantidad}</td>

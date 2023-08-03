@@ -1,9 +1,9 @@
-nav{
-    height: 10%;
-}
 
 body{
     background-size: cover;
+}
+nav{
+    height: 10%;
 }
 
 .main-section{
@@ -54,7 +54,7 @@ body{
     content: "\f023";
 }
 
-button{
+#btn_admin{
     width: 60%;
     margin: 5px 0 25px;
 }

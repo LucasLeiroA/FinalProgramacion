@@ -1,0 +1,152 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+}
+li{
+    list-style: none;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row !important;
+}
+
+#toogle{
+    display: none;
+}
+nav{
+    height: 10%;
+}
+#btn-sesion{
+    padding: 15px;
+    margin: 5px 15px 15px 15px;
+    border-radius: 20px;
+    border: none;
+   
+}
+#toogle{
+    padding: 15px;
+    margin: 5px 15px 15px 15px;
+    border-radius: 20px;
+    border: none;  
+}
+#icono{
+    color: black;
+    font-size: 25px;
+}
+#datos-sesion{
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: white;
+    width: 20vw;
+    height: 30vh;
+    box-shadow: 0px 10px 10px black;
+}
+#nombre-correo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:85%;
+}
+#nombre-correo h2{
+    margin-left: 3%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-text);
+    word-wrap: break-word;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#btn-cerrar-ventana{
+    position: fixed;
+    right: 3px;
+    padding: 10px;
+    border: none;
+    font-size: 25px ;
+}
+#contenedor-btn-cerrar{
+display: flex;
+justify-content: center;
+
+
+}
+#btn-cerrar-sesion{
+    text-align: center;
+    width: 80%;
+    padding: 2px;
+    box-shadow: 0px 5px 5px black;
+    border: none;
+    background-color: rgb(214, 29, 29);
+    color: white;
+}
+.nav-menu_visible{
+    left: 0;
+}
+
+@media (max-width:1355px){
+    nav li{
+        font-size: 15px;
+    }
+    #datos-sesion{
+        width: 30%;
+    }
+    
+}
+@media (max-width:1028px){
+
+    #toogle{
+        display: block;
+
+    }
+    
+    .nav-menu{
+        position: fixed !important;
+        display: flex;
+        flex-direction: column !important;
+        z-index: 10 !important;
+        height: 100vh !important;
+        justify-content: center !important;
+        background-color: white;
+        width: 100%;
+    
+        height: 100%;  
+        overflow-y: auto;
+    
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    #navList{
+        margin: 10px;
+        border: none;
+    }
+    
+    #iconToggle{
+        display: flex;
+         z-index: 11 !important;
+        position: absolute;
+        right: 1%;
+    }
+
+    #datos-sesion{
+        height: auto;
+        width: auto;
+        z-index: 50;
+    }
+
+    #btn-cerrar-ventana{
+        position:relative;
+        left:80%;
+       
+    }
+
+    
+}
