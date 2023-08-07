@@ -16,7 +16,7 @@ label{
 #btn_tipo_venta{
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 10vh;
     left: 0px;
 }
@@ -128,4 +128,27 @@ section input{
 section button{
     border-radius: 20px;
     padding: 4px;
+}
+@media (max-width:1028px){
+    #contenedor1{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+   
+  
+    }
+    #container{
+        width: 80%;
+        margin: auto;
+    }
+    #div1{ 
+        
+        width: 80%;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+    #muestra{
+        height: auto;
+        overflow: auto;
+    }
 }

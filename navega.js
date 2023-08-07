@@ -35,15 +35,15 @@ export function barra(){
                 <a class="nav-link active" aria-current="page" href="../ReportesMultiples/reportes.html">Reportes Multiples</a>
             </li>
         
-            </ul>
+     </ul>
                <div id="iconToggle">
-               <li class="nav-item">
-                  <button id="toogle">!!!</button>
+                <li class="nav-item">
+                    <button id="toogle"><i class="fas fa-bars"></i></button>
+                    </li>
+                <li class="nav-item">
+                        <button id="btn-sesion"> <i id="icono"class="fas fa-user"></i></button> 
                 </li>
-               <li class="nav-item">
-                    <button id="btn-sesion"> <i id="icono"class="fas fa-user"></i></button> 
-               </li>
-               
+                
                </div>
                     
               

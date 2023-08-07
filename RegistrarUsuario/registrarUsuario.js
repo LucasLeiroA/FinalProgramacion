@@ -99,14 +99,6 @@ async function crearUsuario() {
                   categoriaId: "2",
                   nombre: "test",
                 }).then(console.log("articulo agregado"));
-                await IngresarDatos(`user/${id_user_creado}/clientes`, {
-                  nomYape: "test",
-                  dni: "12345678",
-                  direccion: "Tucuman 123",
-                }).then(console.log("cliente creado"));
-                await prueba(id_user_creado, "cuentaCorriente", "1", {}).then(
-                  console.log("cuentaCorriente creado")
-                );
                 await prueba(id_user_creado, "estadoVenta", "1", {
                   estado: "habilitada",
                 }).then(console.log("estadoVEnta agregado"));
